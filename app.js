@@ -6,7 +6,8 @@ let vehicleMarkers = {};
 let updateInterval;
 let refreshCountdown;
 const REFRESH_INTERVAL = 30000; // 30 seconds
-const API_URL = 'https://gtfs.sofiatraffic.bg/api/v1/vehicle-positions';
+// Use CORS proxy to access the API from GitHub Pages
+const API_URL = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://gtfs.sofiatraffic.bg/api/v1/vehicle-positions');
 
 // GTFS Realtime protobuf definition
 const gtfsRealtimeProto = `
