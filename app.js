@@ -9,6 +9,24 @@ const REFRESH_INTERVAL = 5000; // 5 seconds
 // Use CORS proxy to access the API from GitHub Pages
 const API_URL = 'https://corsproxy.io/?' + encodeURIComponent('https://gtfs.sofiatraffic.bg/api/v1/vehicle-positions');
 
+// Route Mapping: internal route_id to passenger-visible route number
+const ROUTE_MAPPING = {
+    "A3": "111",  // Confirmed: A3 is Bus 111
+    "A77": "67",  // Confirmed: A77 is Bus 67
+    // Add more mappings as discovered
+};
+
+/**
+ * Get the passenger-visible route number from a route_id
+ */
+function getRouteNumber(routeId) {
+    if (ROUTE_MAPPING[routeId]) {
+        return ROUTE_MAPPING[routeId];
+    }
+    // Fallback: remove prefix (might not be accurate for all routes)
+    return routeId.replace(/^(TM|TB|A)/, '');
+}
+
 // GTFS Realtime protobuf definition (Complete GTFS-RT spec)
 const gtfsRealtimeProto = `
 syntax = "proto2";
@@ -224,11 +242,11 @@ function getVehicleType(routeId) {
 }
 
 // Create custom marker icon
-function createMarkerIcon(routeId, vehicleType) {
+function createMarkerIcon(routeNumber, vehicleType) {
     return L.divIcon({
         className: 'custom-div-icon',
         html: `<div class="vehicle-marker marker-${vehicleType.type}" style="background: ${vehicleType.color}">
-                ${routeId}
+                ${routeNumber}
                </div>`,
         iconSize: [30, 30],
         iconAnchor: [15, 15]
@@ -247,7 +265,7 @@ function updateVehicles(vehicles) {
     const currentVehicleIds = new Set();
 
     vehicles.forEach(vehicle => {
-        const { routeId, vehicleId, lat, lon, timestamp, entityId } = vehicle;
+        const { routeId, routeNumber, vehicleId, lat, lon, timestamp, entityId } = vehicle;
         const vehicleType = getVehicleType(routeId);
         
         // Count by type
@@ -259,13 +277,13 @@ function updateVehicles(vehicles) {
             // Update existing marker position
             vehicleMarkers[entityId].setLatLng([lat, lon]);
         } else {
-            // Create new marker - display route ID with prefix
-            const icon = createMarkerIcon(routeId, vehicleType);
+            // Create new marker - display passenger-visible route number
+            const icon = createMarkerIcon(routeNumber, vehicleType);
             const marker = L.marker([lat, lon], { icon: icon }).addTo(map);
             
             // Add popup with vehicle info
             marker.bindPopup(`
-                <div class="popup-route">${vehicleType.label} Route ${routeId}</div>
+                <div class="popup-route">${vehicleType.label} Route ${routeNumber}</div>
                 <div class="popup-info">
                     <strong>Vehicle ID:</strong> ${vehicleId}<br>
                     <strong>Position:</strong><br>
@@ -349,10 +367,12 @@ async function fetchVehicleData() {
             
             if (entity.vehicle && entity.vehicle.position) {
                 const routeId = entity.vehicle.trip?.routeId || 'Unknown';
+                const routeNumber = getRouteNumber(routeId);
                 
                 vehicles.push({
                     entityId: entity.id,
-                    routeId: routeId,
+                    routeId: routeId,  // Internal route ID for type detection
+                    routeNumber: routeNumber,  // Passenger-visible route number
                     vehicleId: entity.vehicle.vehicle?.id || entity.vehicle.vehicle?.label || 'N/A',
                     lat: entity.vehicle.position.latitude,
                     lon: entity.vehicle.position.longitude,
