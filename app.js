@@ -317,30 +317,45 @@ function calculateETA(distance, speed) {
 
 // Find vehicles approaching a stop
 function getApproachingVehicles(stopId, stopLat, stopLon) {
-    const maxDistance = 500; // Only show vehicles within 500m
+    const maxDistance = 1000; // Increased to 1000m to show more vehicles
     const approaching = [];
     
+    console.log(`Finding vehicles for stop ${stopId} at ${stopLat}, ${stopLon}`);
+    console.log(`Total current vehicles: ${currentVehicles.length}`);
+    
     currentVehicles.forEach(vehicle => {
-        // Check if this vehicle is heading to this stop
-        if (vehicle.stopId === stopId) {
-            const distance = calculateDistance(vehicle.lat, vehicle.lon, stopLat, stopLon);
+        const distance = calculateDistance(vehicle.lat, vehicle.lon, stopLat, stopLon);
+        
+        // Show vehicles heading to this stop OR within range
+        const isHeadingToStop = vehicle.stopId === stopId;
+        const isNearby = distance <= maxDistance;
+        
+        if (isHeadingToStop || isNearby) {
+            const vehicleType = getVehicleType(vehicle.routeId);
+            const vehicleInfo = {
+                routeNumber: vehicle.routeNumber,
+                vehicleType: vehicleType,
+                distance: Math.round(distance),
+                eta: calculateETA(distance, vehicle.speed || 0),
+                vehicleId: vehicle.vehicleId,
+                stopId: vehicle.stopId,
+                isHeading: isHeadingToStop
+            };
             
+            // Only add if within reasonable distance
             if (distance <= maxDistance) {
-                const vehicleType = getVehicleType(vehicle.routeId);
-                approaching.push({
-                    routeNumber: vehicle.routeNumber,
-                    vehicleType: vehicleType,
-                    distance: Math.round(distance),
-                    eta: calculateETA(distance, vehicle.speed || 0),
-                    vehicleId: vehicle.vehicleId
-                });
+                approaching.push(vehicleInfo);
             }
         }
     });
     
+    console.log(`Found ${approaching.length} approaching vehicles for stop ${stopId}`);
+    
     // Sort by distance
     approaching.sort((a, b) => a.distance - b.distance);
-    return approaching;
+    
+    // Limit to closest 5 vehicles
+    return approaching.slice(0, 5);
 }
 
 // Display all stops on the map
@@ -368,17 +383,20 @@ function updateStopPopup(marker, stop, approaching) {
     let vehiclesList = '';
     
     if (approaching.length === 0) {
-        vehiclesList = '<em style="color: #999;">No vehicles approaching</em>';
+        vehiclesList = '<em style="color: #999;">No vehicles nearby (within 1 km)</em>';
     } else {
-        vehiclesList = approaching.map(v => 
-            `<div style="margin: 5px 0; padding: 5px; background: #f8f9fa; border-radius: 4px;">
-                <strong>${v.vehicleType.label} ${v.routeNumber}</strong>
+        vehiclesList = approaching.map(v => {
+            const headingIndicator = v.isHeading ? '➜ ' : '';
+            const targetStop = v.stopId && v.stopId !== 'N/A' ? ` → Stop ${v.stopId}` : '';
+            
+            return `<div style="margin: 5px 0; padding: 5px; background: #f8f9fa; border-radius: 4px;">
+                <strong>${headingIndicator}${v.vehicleType.label} ${v.routeNumber}</strong>${targetStop}
                 <br>
                 <span style="font-size: 12px; color: #666;">
                     📍 ${v.distance}m away • ⏱️ ${v.eta}
                 </span>
-            </div>`
-        ).join('');
+            </div>`;
+        }).join('');
     }
     
     const routesList = stop.routes ? stop.routes.slice(0, 5).join(', ') : 'Unknown';
@@ -390,7 +408,7 @@ function updateStopPopup(marker, stop, approaching) {
         </div>
         <div class="popup-info">
             <strong>Routes:</strong> ${routesList}${moreRoutes}<br>
-            <strong style="margin-top: 8px; display: block;">Approaching vehicles:</strong>
+            <strong style="margin-top: 8px; display: block;">Nearby vehicles:</strong>
             ${vehiclesList}
         </div>
     `, {
