@@ -7,7 +7,7 @@ let updateInterval;
 let refreshCountdown;
 const REFRESH_INTERVAL = 30000; // 30 seconds
 // Use CORS proxy to access the API from GitHub Pages
-const API_URL = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://gtfs.sofiatraffic.bg/api/v1/vehicle-positions');
+const API_URL = 'https://corsproxy.io/?' + encodeURIComponent('https://gtfs.sofiatraffic.bg/api/v1/vehicle-positions');
 
 // GTFS Realtime protobuf definition
 const gtfsRealtimeProto = `
