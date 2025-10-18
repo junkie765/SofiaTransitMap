@@ -17,8 +17,8 @@ const API_URL = 'https://corsproxy.io/?' + encodeURIComponent('https://gtfs.sofi
 const ROUTE_MAPPING = {
     "A3": "111",  // Confirmed: A3 is Bus 111
     "A77": "67",  // Confirmed: A77 is Bus 67
-    "12": "102",  // Confirmed: A12 is Bus 12
-    "58": "280",   // Confirmed: TM58 is Tram 58
+    "A12": "102",  // Confirmed: A12 is Bus 12
+    "A58": "280",   // Confirmed: TM58 is Tram 58
 
     // Add more mappings as discovered
 };
