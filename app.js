@@ -224,11 +224,11 @@ function getVehicleType(routeId) {
 }
 
 // Create custom marker icon
-function createMarkerIcon(routeId, vehicleType) {
+function createMarkerIcon(vehicleId, vehicleType) {
     return L.divIcon({
         className: 'custom-div-icon',
         html: `<div class="vehicle-marker marker-${vehicleType.type}" style="background: ${vehicleType.color}">
-                ${routeId.replace('TM', '').replace('TB', '').replace('A', '')}
+                ${vehicleId}
                </div>`,
         iconSize: [30, 30],
         iconAnchor: [15, 15]
@@ -247,7 +247,7 @@ function updateVehicles(vehicles) {
     const currentVehicleIds = new Set();
 
     vehicles.forEach(vehicle => {
-        const { routeId, lat, lon, timestamp, entityId } = vehicle;
+        const { routeId, vehicleId, lat, lon, timestamp, entityId } = vehicle;
         const vehicleType = getVehicleType(routeId);
         
         // Count by type
@@ -260,13 +260,14 @@ function updateVehicles(vehicles) {
             vehicleMarkers[entityId].setLatLng([lat, lon]);
         } else {
             // Create new marker
-            const icon = createMarkerIcon(routeId, vehicleType);
+            const icon = createMarkerIcon(vehicleId, vehicleType);
             const marker = L.marker([lat, lon], { icon: icon }).addTo(map);
             
             // Add popup with vehicle info
             marker.bindPopup(`
                 <div class="popup-route">${vehicleType.label} Route ${routeId}</div>
                 <div class="popup-info">
+                    <strong>Vehicle:</strong> ${vehicleId}<br>
                     <strong>Position:</strong><br>
                     Lat: ${lat.toFixed(6)}<br>
                     Lon: ${lon.toFixed(6)}<br>
@@ -340,6 +341,8 @@ async function fetchVehicleData() {
                 console.log(`Entity ${index}:`, {
                     hasVehicle: !!entity.vehicle,
                     hasPosition: !!(entity.vehicle && entity.vehicle.position),
+                    vehicleId: entity.vehicle?.vehicle?.id,
+                    vehicleLabel: entity.vehicle?.vehicle?.label,
                     entityKeys: Object.keys(entity)
                 });
             }
@@ -348,6 +351,7 @@ async function fetchVehicleData() {
                 vehicles.push({
                     entityId: entity.id,
                     routeId: entity.vehicle.trip?.routeId || 'Unknown',
+                    vehicleId: entity.vehicle.vehicle?.id || entity.vehicle.vehicle?.label || 'N/A',
                     lat: entity.vehicle.position.latitude,
                     lon: entity.vehicle.position.longitude,
                     timestamp: entity.vehicle.timestamp || feed.header.timestamp
