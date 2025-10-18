@@ -302,10 +302,12 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 
 // Calculate estimated time of arrival (simple calculation)
 function calculateETA(distance, speed) {
-    // speed is in m/s from GTFS data
-    // If speed is 0 or unavailable, assume average city speed of 20 km/h = 5.5 m/s
-    const avgSpeed = speed && speed > 0 ? speed : 5.5;
-    const timeInSeconds = distance / avgSpeed;
+    // Speed from GTFS appears to be in km/h already (not m/s)
+    // Convert speed to m/s for calculation: km/h / 3.6 = m/s
+    // If speed is 0 or unavailable, assume average city speed of 20 km/h
+    const speedKmH = speed && speed > 0 ? speed : 20;
+    const speedMS = speedKmH / 3.6;  // Convert km/h to m/s
+    const timeInSeconds = distance / speedMS;
     
     if (timeInSeconds < 60) {
         return '< 1 min';
@@ -477,7 +479,7 @@ function updateVehicles(vehicles) {
         
         // Update popup with stop info
         const stopInfo = stopId && stopId !== 'N/A' ? `<strong>Next Stop:</strong> ${stopId}<br>` : '';
-        const speedInfo = speed ? `<strong>Speed:</strong> ${Math.round(speed * 3.6)} km/h<br>` : '';
+        const speedInfo = speed && speed > 0 ? `<strong>Speed:</strong> ${Math.round(speed)} km/h<br>` : '';
         
         vehicleMarkers[entityId].bindPopup(`
             <div class="popup-route">${vehicleType.label} Route ${routeNumber}</div>
@@ -584,7 +586,7 @@ async function fetchVehicleData() {
                     lat: entity.vehicle.position.latitude,
                     lon: entity.vehicle.position.longitude,
                     stopId: entity.vehicle.stopId || 'N/A',  // Next stop ID
-                    speed: entity.vehicle.position.speed || 0,  // Speed in m/s
+                    speed: entity.vehicle.position.speed || 0,  // Speed in km/h
                     timestamp: entity.vehicle.timestamp || feed.header.timestamp
                 });
             }
