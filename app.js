@@ -224,11 +224,11 @@ function getVehicleType(routeId) {
 }
 
 // Create custom marker icon
-function createMarkerIcon(vehicleId, vehicleType) {
+function createMarkerIcon(routeId, vehicleType) {
     return L.divIcon({
         className: 'custom-div-icon',
         html: `<div class="vehicle-marker marker-${vehicleType.type}" style="background: ${vehicleType.color}">
-                ${vehicleId}
+                ${routeId}
                </div>`,
         iconSize: [30, 30],
         iconAnchor: [15, 15]
@@ -259,15 +259,15 @@ function updateVehicles(vehicles) {
             // Update existing marker position
             vehicleMarkers[entityId].setLatLng([lat, lon]);
         } else {
-            // Create new marker
-            const icon = createMarkerIcon(vehicleId, vehicleType);
+            // Create new marker - display route ID with prefix
+            const icon = createMarkerIcon(routeId, vehicleType);
             const marker = L.marker([lat, lon], { icon: icon }).addTo(map);
             
             // Add popup with vehicle info
             marker.bindPopup(`
                 <div class="popup-route">${vehicleType.label} Route ${routeId}</div>
                 <div class="popup-info">
-                    <strong>Vehicle:</strong> ${vehicleId}<br>
+                    <strong>Vehicle ID:</strong> ${vehicleId}<br>
                     <strong>Position:</strong><br>
                     Lat: ${lat.toFixed(6)}<br>
                     Lon: ${lon.toFixed(6)}<br>
@@ -348,9 +348,11 @@ async function fetchVehicleData() {
             }
             
             if (entity.vehicle && entity.vehicle.position) {
+                const routeId = entity.vehicle.trip?.routeId || 'Unknown';
+                
                 vehicles.push({
                     entityId: entity.id,
-                    routeId: entity.vehicle.trip?.routeId || 'Unknown',
+                    routeId: routeId,
                     vehicleId: entity.vehicle.vehicle?.id || entity.vehicle.vehicle?.label || 'N/A',
                     lat: entity.vehicle.position.latitude,
                     lon: entity.vehicle.position.longitude,
