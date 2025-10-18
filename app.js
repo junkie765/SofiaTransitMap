@@ -5,7 +5,7 @@ let map;
 let vehicleMarkers = {};
 let updateInterval;
 let refreshCountdown;
-const REFRESH_INTERVAL = 30000; // 30 seconds
+const REFRESH_INTERVAL = 5000; // 5 seconds
 // Use CORS proxy to access the API from GitHub Pages
 const API_URL = 'https://corsproxy.io/?' + encodeURIComponent('https://gtfs.sofiatraffic.bg/api/v1/vehicle-positions');
 
