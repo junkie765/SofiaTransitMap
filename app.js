@@ -4,7 +4,8 @@
 let map;
 let vehicleMarkers = {};
 let stopMarkers = {};
-let stopsData = {}; // Store stop information
+let stopsData = []; // Static stops data loaded from JSON
+let currentVehicles = []; // Current vehicle positions
 let updateInterval;
 let refreshCountdown;
 let showStops = false; // Toggle for showing stops
@@ -263,6 +264,139 @@ function formatTime(timestamp) {
     return date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 }
 
+// Load static stops data
+async function loadStops() {
+    try {
+        const response = await fetch('stops_static.json');
+        const data = await response.json();
+        stopsData = data.stops;
+        console.log(`Loaded ${stopsData.length} stops`);
+        
+        if (showStops) {
+            displayStops();
+        }
+    } catch (error) {
+        console.error('Error loading stops data:', error);
+        // Use fallback - extract from vehicle data
+        stopsData = [];
+    }
+}
+
+// Calculate distance between two points (in meters)
+function calculateDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371e3; // Earth's radius in meters
+    const φ1 = lat1 * Math.PI / 180;
+    const φ2 = lat2 * Math.PI / 180;
+    const Δφ = (lat2 - lat1) * Math.PI / 180;
+    const Δλ = (lon2 - lon1) * Math.PI / 180;
+
+    const a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+              Math.cos(φ1) * Math.cos(φ2) *
+              Math.sin(Δλ/2) * Math.sin(Δλ/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+    return R * c; // Distance in meters
+}
+
+// Calculate estimated time of arrival (simple calculation)
+function calculateETA(distance, speed) {
+    // speed is in m/s from GTFS data
+    // If speed is 0 or unavailable, assume average city speed of 20 km/h = 5.5 m/s
+    const avgSpeed = speed && speed > 0 ? speed : 5.5;
+    const timeInSeconds = distance / avgSpeed;
+    
+    if (timeInSeconds < 60) {
+        return '< 1 min';
+    } else {
+        const minutes = Math.round(timeInSeconds / 60);
+        return `~${minutes} min`;
+    }
+}
+
+// Find vehicles approaching a stop
+function getApproachingVehicles(stopId, stopLat, stopLon) {
+    const maxDistance = 500; // Only show vehicles within 500m
+    const approaching = [];
+    
+    currentVehicles.forEach(vehicle => {
+        // Check if this vehicle is heading to this stop
+        if (vehicle.stopId === stopId) {
+            const distance = calculateDistance(vehicle.lat, vehicle.lon, stopLat, stopLon);
+            
+            if (distance <= maxDistance) {
+                const vehicleType = getVehicleType(vehicle.routeId);
+                approaching.push({
+                    routeNumber: vehicle.routeNumber,
+                    vehicleType: vehicleType,
+                    distance: Math.round(distance),
+                    eta: calculateETA(distance, vehicle.speed || 0),
+                    vehicleId: vehicle.vehicleId
+                });
+            }
+        }
+    });
+    
+    // Sort by distance
+    approaching.sort((a, b) => a.distance - b.distance);
+    return approaching;
+}
+
+// Display all stops on the map
+function displayStops() {
+    stopsData.forEach(stop => {
+        if (!stopMarkers[stop.stop_id]) {
+            const marker = L.marker([stop.lat, stop.lon], {
+                icon: createStopMarker()
+            }).addTo(map);
+            
+            // Set up hover event
+            marker.on('mouseover', function() {
+                const approaching = getApproachingVehicles(stop.stop_id, stop.lat, stop.lon);
+                updateStopPopup(marker, stop, approaching);
+                marker.openPopup();
+            });
+            
+            stopMarkers[stop.stop_id] = marker;
+        }
+    });
+}
+
+// Update stop popup with approaching vehicles
+function updateStopPopup(marker, stop, approaching) {
+    let vehiclesList = '';
+    
+    if (approaching.length === 0) {
+        vehiclesList = '<em style="color: #999;">No vehicles approaching</em>';
+    } else {
+        vehiclesList = approaching.map(v => 
+            `<div style="margin: 5px 0; padding: 5px; background: #f8f9fa; border-radius: 4px;">
+                <strong>${v.vehicleType.label} ${v.routeNumber}</strong>
+                <br>
+                <span style="font-size: 12px; color: #666;">
+                    📍 ${v.distance}m away • ⏱️ ${v.eta}
+                </span>
+            </div>`
+        ).join('');
+    }
+    
+    const routesList = stop.routes ? stop.routes.slice(0, 5).join(', ') : 'Unknown';
+    const moreRoutes = stop.routes && stop.routes.length > 5 ? ` +${stop.routes.length - 5} more` : '';
+    
+    marker.bindPopup(`
+        <div class="popup-stop">
+            <strong>🚏 Stop ${stop.stop_id}</strong>
+        </div>
+        <div class="popup-info">
+            <strong>Routes:</strong> ${routesList}${moreRoutes}<br>
+            <strong style="margin-top: 8px; display: block;">Approaching vehicles:</strong>
+            ${vehiclesList}
+        </div>
+    `, {
+        maxWidth: 300,
+        minWidth: 200
+    });
+}
+
 // Create stop marker icon
 function createStopMarker() {
     return L.divIcon({
@@ -273,83 +407,20 @@ function createStopMarker() {
     });
 }
 
-// Update stops from vehicle data
-function updateStops(vehicles) {
-    // Collect stop information from vehicles
-    const stopVehicles = {}; // stopId -> array of vehicles
-    
-    vehicles.forEach(vehicle => {
-        if (vehicle.stopId && vehicle.stopId !== 'N/A') {
-            if (!stopVehicles[vehicle.stopId]) {
-                stopVehicles[vehicle.stopId] = [];
-            }
-            stopVehicles[vehicle.stopId].push({
-                routeNumber: vehicle.routeNumber,
-                vehicleId: vehicle.vehicleId,
-                vehicleType: getVehicleType(vehicle.routeId)
-            });
-            
-            // Store stop location (approximate from vehicle)
-            if (!stopsData[vehicle.stopId]) {
-                stopsData[vehicle.stopId] = {
-                    lat: vehicle.lat,
-                    lon: vehicle.lon,
-                    vehicles: []
-                };
-            }
-        }
-    });
-    
-    // Update stop markers if enabled
-    if (showStops) {
-        Object.keys(stopVehicles).forEach(stopId => {
-            const stopInfo = stopsData[stopId];
-            if (!stopInfo) return;
-            
-            if (!stopMarkers[stopId]) {
-                // Create new stop marker
-                const marker = L.marker([stopInfo.lat, stopInfo.lon], {
-                    icon: createStopMarker()
-                }).addTo(map);
-                
-                stopMarkers[stopId] = marker;
-            }
-            
-            // Update popup with current vehicles
-            const vehiclesList = stopVehicles[stopId]
-                .map(v => `${v.vehicleType.label} ${v.routeNumber}`)
-                .join('<br>');
-            
-            stopMarkers[stopId].bindPopup(`
-                <div class="popup-stop">
-                    <strong>🚏 Stop ${stopId}</strong>
-                </div>
-                <div class="popup-info">
-                    <strong>Vehicles at/approaching:</strong><br>
-                    ${vehiclesList || 'None'}
-                </div>
-            `);
-        });
-    }
-}
-
 // Toggle stops visibility
 function toggleStops() {
     showStops = !showStops;
     
     if (showStops) {
         // Show stops
-        Object.keys(stopMarkers).forEach(stopId => {
-            if (stopMarkers[stopId]) {
-                stopMarkers[stopId].addTo(map);
-            }
-        });
+        displayStops();
         document.getElementById('toggle-stops').textContent = '🚏 Hide Stops';
     } else {
         // Hide stops
         Object.keys(stopMarkers).forEach(stopId => {
             if (stopMarkers[stopId]) {
                 map.removeLayer(stopMarkers[stopId]);
+                delete stopMarkers[stopId];
             }
         });
         document.getElementById('toggle-stops').textContent = '🚏 Show Stops';
@@ -360,9 +431,12 @@ function toggleStops() {
 function updateVehicles(vehicles) {
     const counts = { bus: 0, tram: 0, trolley: 0 };
     const currentVehicleIds = new Set();
+    
+    // Store current vehicles for stop calculations
+    currentVehicles = vehicles;
 
     vehicles.forEach(vehicle => {
-        const { routeId, routeNumber, vehicleId, lat, lon, timestamp, entityId, stopId } = vehicle;
+        const { routeId, routeNumber, vehicleId, lat, lon, timestamp, entityId, stopId, speed } = vehicle;
         const vehicleType = getVehicleType(routeId);
         
         // Count by type
@@ -383,11 +457,14 @@ function updateVehicles(vehicles) {
         
         // Update popup with stop info
         const stopInfo = stopId && stopId !== 'N/A' ? `<strong>Next Stop:</strong> ${stopId}<br>` : '';
+        const speedInfo = speed ? `<strong>Speed:</strong> ${Math.round(speed * 3.6)} km/h<br>` : '';
+        
         vehicleMarkers[entityId].bindPopup(`
             <div class="popup-route">${vehicleType.label} Route ${routeNumber}</div>
             <div class="popup-info">
                 <strong>Vehicle ID:</strong> ${vehicleId}<br>
                 ${stopInfo}
+                ${speedInfo}
                 <strong>Position:</strong><br>
                 Lat: ${lat.toFixed(6)}<br>
                 Lon: ${lon.toFixed(6)}<br>
@@ -404,8 +481,16 @@ function updateVehicles(vehicles) {
         }
     });
 
-    // Update stops
-    updateStops(vehicles);
+    // Update stop popups if stops are visible
+    if (showStops) {
+        Object.keys(stopMarkers).forEach(stopId => {
+            const stop = stopsData.find(s => s.stop_id === stopId);
+            if (stop) {
+                const approaching = getApproachingVehicles(stopId, stop.lat, stop.lon);
+                updateStopPopup(stopMarkers[stopId], stop, approaching);
+            }
+        });
+    }
 
     // Update counts
     document.getElementById('bus-count').textContent = counts.bus;
@@ -479,6 +564,7 @@ async function fetchVehicleData() {
                     lat: entity.vehicle.position.latitude,
                     lon: entity.vehicle.position.longitude,
                     stopId: entity.vehicle.stopId || 'N/A',  // Next stop ID
+                    speed: entity.vehicle.position.speed || 0,  // Speed in m/s
                     timestamp: entity.vehicle.timestamp || feed.header.timestamp
                 });
             }
@@ -533,6 +619,9 @@ async function init() {
     
     // Initialize map
     initMap();
+    
+    // Load static stops data
+    await loadStops();
     
     // Fetch initial data
     await fetchVehicleData();

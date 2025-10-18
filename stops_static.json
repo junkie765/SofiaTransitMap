@@ -1,0 +1,2994 @@
+{
+  "generated": "2025-10-18",
+  "total_stops": 328,
+  "stops": [
+    {
+      "stop_id": "A2372",
+      "lat": 42.663002,
+      "lon": 23.397736,
+      "routes": [
+        "A91"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0315",
+      "lat": 42.660339,
+      "lon": 23.347225,
+      "routes": [
+        "A12"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1730",
+      "lat": 42.676968,
+      "lon": 23.342415,
+      "routes": [
+        "A77"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1965",
+      "lat": 42.700353,
+      "lon": 23.334293,
+      "routes": [
+        "TB2",
+        "TB4",
+        "TB6"
+      ],
+      "num_observations": 3
+    },
+    {
+      "stop_id": "A2213",
+      "lat": 42.655121,
+      "lon": 23.284138,
+      "routes": [
+        "A61"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1350",
+      "lat": 42.617725,
+      "lon": 23.335674,
+      "routes": [
+        "A28"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2053",
+      "lat": 42.673466,
+      "lon": 23.252977,
+      "routes": [
+        "TB39"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0882",
+      "lat": 42.666973,
+      "lon": 23.266207,
+      "routes": [
+        "A29"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2351",
+      "lat": 42.663174,
+      "lon": 23.357195,
+      "routes": [
+        "TB43"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2071",
+      "lat": 42.694927,
+      "lon": 23.355015,
+      "routes": [
+        "A90"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1277",
+      "lat": 42.702534,
+      "lon": 23.323067,
+      "routes": [
+        "TM34"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1073",
+      "lat": 42.699566,
+      "lon": 23.32485,
+      "routes": [
+        "TM20"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0363",
+      "lat": 42.69154,
+      "lon": 23.311258,
+      "routes": [
+        "TB10"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1880",
+      "lat": 42.681057,
+      "lon": 23.332064,
+      "routes": [
+        "TM24"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0225",
+      "lat": 42.643272,
+      "lon": 23.412354,
+      "routes": [
+        "A100"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1706",
+      "lat": 42.684036,
+      "lon": 23.241697,
+      "routes": [
+        "A12"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2491",
+      "lat": 42.627098,
+      "lon": 23.373446,
+      "routes": [
+        "A200"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1491",
+      "lat": 42.690487,
+      "lon": 23.353998,
+      "routes": [
+        "TM20"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1862",
+      "lat": 42.705482,
+      "lon": 23.359098,
+      "routes": [
+        "TB10"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1737",
+      "lat": 42.682735,
+      "lon": 23.314535,
+      "routes": [
+        "TM30"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0244",
+      "lat": 42.708961,
+      "lon": 23.255436,
+      "routes": [
+        "A60"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0547",
+      "lat": 42.726906,
+      "lon": 23.312508,
+      "routes": [
+        "TM32"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0466",
+      "lat": 42.696815,
+      "lon": 23.354292,
+      "routes": [
+        "A4"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1207",
+      "lat": 42.614616,
+      "lon": 23.460354,
+      "routes": [
+        "A70"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2248",
+      "lat": 42.705173,
+      "lon": 23.298449,
+      "routes": [
+        "TM24"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1264",
+      "lat": 42.69479,
+      "lon": 23.329069,
+      "routes": [
+        "TB8"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2588",
+      "lat": 42.649902,
+      "lon": 23.404995,
+      "routes": [
+        "TM50"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0112",
+      "lat": 42.664886,
+      "lon": 23.454037,
+      "routes": [
+        "A74"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0441",
+      "lat": 42.693867,
+      "lon": 23.337954,
+      "routes": [
+        "A2"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0624",
+      "lat": 42.676441,
+      "lon": 23.308176,
+      "routes": [
+        "TM27"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1247",
+      "lat": 42.694462,
+      "lon": 23.2925,
+      "routes": [
+        "TM29"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2232",
+      "lat": 42.729046,
+      "lon": 23.28776,
+      "routes": [
+        "A9"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2180",
+      "lat": 42.705217,
+      "lon": 23.385068,
+      "routes": [
+        "A36",
+        "A38"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A1694",
+      "lat": 42.645559,
+      "lon": 23.345433,
+      "routes": [
+        "A57",
+        "A58"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A0698",
+      "lat": 42.707596,
+      "lon": 23.341591,
+      "routes": [
+        "A201",
+        "A56"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A0419",
+      "lat": 42.690414,
+      "lon": 23.296581,
+      "routes": [
+        "A1"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2535",
+      "lat": 42.782913,
+      "lon": 23.51869,
+      "routes": [
+        "A34"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0292",
+      "lat": 42.695633,
+      "lon": 23.288237,
+      "routes": [
+        "A1",
+        "A8"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A0591",
+      "lat": 42.657349,
+      "lon": 23.273556,
+      "routes": [
+        "A25"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2279",
+      "lat": 42.617924,
+      "lon": 23.336447,
+      "routes": [
+        "A77"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0551",
+      "lat": 42.733753,
+      "lon": 23.328381,
+      "routes": [
+        "A53"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2020",
+      "lat": 42.582378,
+      "lon": 23.424047,
+      "routes": [
+        "A66"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0851",
+      "lat": 42.659927,
+      "lon": 23.244999,
+      "routes": [
+        "TM25",
+        "TM29"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "TM0097",
+      "lat": 42.673904,
+      "lon": 23.269613,
+      "routes": [
+        "TM29"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1977",
+      "lat": 42.692627,
+      "lon": 23.296,
+      "routes": [
+        "TB35"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1102",
+      "lat": 42.699383,
+      "lon": 23.342194,
+      "routes": [
+        "TB9"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1914",
+      "lat": 42.688264,
+      "lon": 23.333207,
+      "routes": [
+        "A57",
+        "A81",
+        "A84",
+        "A91"
+      ],
+      "num_observations": 4
+    },
+    {
+      "stop_id": "A0141",
+      "lat": 42.656666,
+      "lon": 23.401093,
+      "routes": [
+        "A100"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1602",
+      "lat": 42.638725,
+      "lon": 23.39747,
+      "routes": [
+        "A87"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1287",
+      "lat": 42.690708,
+      "lon": 23.337802,
+      "routes": [
+        "A58",
+        "A81",
+        "A85"
+      ],
+      "num_observations": 3
+    },
+    {
+      "stop_id": "A1415",
+      "lat": 42.767925,
+      "lon": 23.357712,
+      "routes": [
+        "A42"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1372",
+      "lat": 42.562065,
+      "lon": 23.364519,
+      "routes": [
+        "A28"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2804",
+      "lat": 42.679676,
+      "lon": 23.302158,
+      "routes": [
+        "TB9"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0168",
+      "lat": 42.641998,
+      "lon": 23.373388,
+      "routes": [
+        "A81"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2458",
+      "lat": 42.657074,
+      "lon": 23.272141,
+      "routes": [
+        "A217"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0187",
+      "lat": 42.731728,
+      "lon": 23.285885,
+      "routes": [
+        "A26"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2067",
+      "lat": 42.685486,
+      "lon": 23.27434,
+      "routes": [
+        "TM29"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2326",
+      "lat": 42.683295,
+      "lon": 23.347467,
+      "routes": [
+        "A68",
+        "A84",
+        "A87"
+      ],
+      "num_observations": 3
+    },
+    {
+      "stop_id": "A2687",
+      "lat": 42.773121,
+      "lon": 23.253307,
+      "routes": [
+        "A103"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2256",
+      "lat": 42.633156,
+      "lon": 23.409166,
+      "routes": [
+        "A66"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1845",
+      "lat": 42.6742,
+      "lon": 23.257796,
+      "routes": [
+        "TB39"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "TM0273",
+      "lat": 42.690258,
+      "lon": 23.306721,
+      "routes": [
+        "TM40"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0297",
+      "lat": 42.696533,
+      "lon": 23.339813,
+      "routes": [
+        "TM22"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2818",
+      "lat": 42.845108,
+      "lon": 23.272001,
+      "routes": [
+        "A109"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0103",
+      "lat": 42.550579,
+      "lon": 23.472677,
+      "routes": [
+        "A68"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0300",
+      "lat": 42.686211,
+      "lon": 23.331232,
+      "routes": [
+        "TM40"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0364",
+      "lat": 42.693106,
+      "lon": 23.314871,
+      "routes": [
+        "TM32",
+        "TM55"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A1396",
+      "lat": 42.658485,
+      "lon": 23.34844,
+      "routes": [
+        "A57"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1927",
+      "lat": 42.703053,
+      "lon": 23.298075,
+      "routes": [
+        "TM22"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1332",
+      "lat": 42.708023,
+      "lon": 23.323287,
+      "routes": [
+        "TM27",
+        "TM28",
+        "TM33"
+      ],
+      "num_observations": 3
+    },
+    {
+      "stop_id": "TM0469",
+      "lat": 42.695774,
+      "lon": 23.355196,
+      "routes": [
+        "TM20"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1255",
+      "lat": 42.713032,
+      "lon": 23.315783,
+      "routes": [
+        "TM30"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1136",
+      "lat": 42.688351,
+      "lon": 23.327282,
+      "routes": [
+        "TB10"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1809",
+      "lat": 42.714851,
+      "lon": 23.253172,
+      "routes": [
+        "TB7"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1930",
+      "lat": 42.640141,
+      "lon": 23.416561,
+      "routes": [
+        "A82"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0614",
+      "lat": 42.651077,
+      "lon": 23.358604,
+      "routes": [
+        "A58"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1863",
+      "lat": 42.70343,
+      "lon": 23.354589,
+      "routes": [
+        "TB10"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1212",
+      "lat": 42.705738,
+      "lon": 23.480667,
+      "routes": [
+        "A110"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0016",
+      "lat": 42.669834,
+      "lon": 23.281,
+      "routes": [
+        "TB8"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2618",
+      "lat": 42.789898,
+      "lon": 23.307922,
+      "routes": [
+        "A50"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1968",
+      "lat": 42.712116,
+      "lon": 23.299849,
+      "routes": [
+        "A54"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1996",
+      "lat": 42.695108,
+      "lon": 23.320543,
+      "routes": [
+        "TM33",
+        "TM40"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A1275",
+      "lat": 42.705252,
+      "lon": 23.332139,
+      "routes": [
+        "A40",
+        "A90"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "TM0368",
+      "lat": 42.673031,
+      "lon": 23.386379,
+      "routes": [
+        "TM20"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1327",
+      "lat": 42.706665,
+      "lon": 23.323551,
+      "routes": [
+        "A87"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1713",
+      "lat": 42.628902,
+      "lon": 23.333326,
+      "routes": [
+        "A77"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2112",
+      "lat": 42.705856,
+      "lon": 23.317696,
+      "routes": [
+        "TM30"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0579",
+      "lat": 42.667233,
+      "lon": 23.369616,
+      "routes": [
+        "TB3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2327",
+      "lat": 42.672054,
+      "lon": 23.363823,
+      "routes": [
+        "TB1"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2078",
+      "lat": 42.701218,
+      "lon": 23.310757,
+      "routes": [
+        "TM22"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0283",
+      "lat": 42.700817,
+      "lon": 23.310214,
+      "routes": [
+        "TB3",
+        "TB7"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A1830",
+      "lat": 42.687305,
+      "lon": 23.365915,
+      "routes": [
+        "A1"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2679",
+      "lat": 42.662006,
+      "lon": 23.354134,
+      "routes": [
+        "A90"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1857",
+      "lat": 42.699104,
+      "lon": 23.347265,
+      "routes": [
+        "A85"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0229",
+      "lat": 42.690475,
+      "lon": 23.255192,
+      "routes": [
+        "A4"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2082",
+      "lat": 42.705803,
+      "lon": 23.316296,
+      "routes": [
+        "A259",
+        "A60"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A1435",
+      "lat": 42.708076,
+      "lon": 23.412422,
+      "routes": [
+        "A34"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2079",
+      "lat": 42.71336,
+      "lon": 23.314932,
+      "routes": [
+        "A55"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2780",
+      "lat": 42.654846,
+      "lon": 23.315781,
+      "routes": [
+        "A63"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1502",
+      "lat": 42.695347,
+      "lon": 23.329388,
+      "routes": [
+        "TB8"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2222",
+      "lat": 42.710194,
+      "lon": 23.349215,
+      "routes": [
+        "TB1"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1853",
+      "lat": 42.718361,
+      "lon": 23.226982,
+      "routes": [
+        "A101"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0778",
+      "lat": 42.641811,
+      "lon": 23.402863,
+      "routes": [
+        "A66"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1151",
+      "lat": 42.677048,
+      "lon": 23.369366,
+      "routes": [
+        "TB43"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1152",
+      "lat": 42.674839,
+      "lon": 23.375984,
+      "routes": [
+        "TB2"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1325",
+      "lat": 42.681202,
+      "lon": 23.321239,
+      "routes": [
+        "TB6"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2326",
+      "lat": 42.67738,
+      "lon": 23.355936,
+      "routes": [
+        "TB1"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0419",
+      "lat": 42.684456,
+      "lon": 23.301575,
+      "routes": [
+        "TB4",
+        "TB8",
+        "TB9"
+      ],
+      "num_observations": 3
+    },
+    {
+      "stop_id": "TB0926",
+      "lat": 42.686577,
+      "lon": 23.324102,
+      "routes": [
+        "TB7"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1298",
+      "lat": 42.693512,
+      "lon": 23.312939,
+      "routes": [
+        "TM25"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0803",
+      "lat": 42.706123,
+      "lon": 23.311359,
+      "routes": [
+        "A4"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2723",
+      "lat": 42.756699,
+      "lon": 23.275515,
+      "routes": [
+        "A13"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1301",
+      "lat": 42.673851,
+      "lon": 23.295961,
+      "routes": [
+        "A12"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2374",
+      "lat": 42.630043,
+      "lon": 23.373116,
+      "routes": [
+        "A81"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1270",
+      "lat": 42.694805,
+      "lon": 23.315548,
+      "routes": [
+        "TM24"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2063",
+      "lat": 42.675266,
+      "lon": 23.303568,
+      "routes": [
+        "TB36"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2124",
+      "lat": 42.712887,
+      "lon": 23.379564,
+      "routes": [
+        "TB32"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1315",
+      "lat": 42.704357,
+      "lon": 23.328672,
+      "routes": [
+        "A56"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0387",
+      "lat": 42.681557,
+      "lon": 23.331804,
+      "routes": [
+        "TM33"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2097",
+      "lat": 42.714344,
+      "lon": 23.284998,
+      "routes": [
+        "A60"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2840",
+      "lat": 42.616892,
+      "lon": 23.225166,
+      "routes": [
+        "A25",
+        "A61"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A2444",
+      "lat": 42.741467,
+      "lon": 23.277435,
+      "routes": [
+        "A27"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1755",
+      "lat": 42.738693,
+      "lon": 23.506643,
+      "routes": [
+        "A36"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1267",
+      "lat": 42.73864,
+      "lon": 23.343723,
+      "routes": [
+        "A45"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1789",
+      "lat": 42.716541,
+      "lon": 23.251778,
+      "routes": [
+        "A101"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1588",
+      "lat": 42.649979,
+      "lon": 23.364683,
+      "routes": [
+        "A82"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0490",
+      "lat": 42.661301,
+      "lon": 23.295971,
+      "routes": [
+        "TB36"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0824",
+      "lat": 42.713585,
+      "lon": 23.416708,
+      "routes": [
+        "A52"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2542",
+      "lat": 42.6632,
+      "lon": 23.357704,
+      "routes": [
+        "A77",
+        "A78"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A2127",
+      "lat": 42.70713,
+      "lon": 23.382809,
+      "routes": [
+        "A37"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2575",
+      "lat": 42.733852,
+      "lon": 23.30921,
+      "routes": [
+        "TM29"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0383",
+      "lat": 42.700466,
+      "lon": 23.317844,
+      "routes": [
+        "TM20"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1278",
+      "lat": 42.704807,
+      "lon": 23.322878,
+      "routes": [
+        "A100"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2249",
+      "lat": 42.704842,
+      "lon": 23.298569,
+      "routes": [
+        "A4"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0316",
+      "lat": 42.659756,
+      "lon": 23.348291,
+      "routes": [
+        "A82"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2245",
+      "lat": 42.706112,
+      "lon": 23.152517,
+      "routes": [
+        "A101"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0392",
+      "lat": 42.686462,
+      "lon": 23.299175,
+      "routes": [
+        "A108"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0274",
+      "lat": 42.685246,
+      "lon": 23.297052,
+      "routes": [
+        "TM51"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2105",
+      "lat": 42.712605,
+      "lon": 23.314877,
+      "routes": [
+        "TB10"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2327",
+      "lat": 42.674519,
+      "lon": 23.3603,
+      "routes": [
+        "A87"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2574",
+      "lat": 42.733856,
+      "lon": 23.309443,
+      "routes": [
+        "TM29"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1687",
+      "lat": 42.729315,
+      "lon": 23.460334,
+      "routes": [
+        "A34",
+        "A35"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "TB1890",
+      "lat": 42.722542,
+      "lon": 23.262039,
+      "routes": [
+        "TB6"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0922",
+      "lat": 42.670879,
+      "lon": 23.320538,
+      "routes": [
+        "TM40"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0947",
+      "lat": 42.641876,
+      "lon": 23.37838,
+      "routes": [
+        "A85",
+        "A87"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "TM1269",
+      "lat": 42.698513,
+      "lon": 23.309505,
+      "routes": [
+        "TM24"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0240",
+      "lat": 42.738174,
+      "lon": 23.295036,
+      "routes": [
+        "A201"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1808",
+      "lat": 42.685848,
+      "lon": 23.328138,
+      "routes": [
+        "A1"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1316",
+      "lat": 42.704811,
+      "lon": 23.333609,
+      "routes": [
+        "A53"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1611",
+      "lat": 42.650436,
+      "lon": 23.342094,
+      "routes": [
+        "A57"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1273",
+      "lat": 42.681065,
+      "lon": 23.331692,
+      "routes": [
+        "TM34"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2227",
+      "lat": 42.706902,
+      "lon": 23.292,
+      "routes": [
+        "TM28"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2141",
+      "lat": 42.690388,
+      "lon": 23.253761,
+      "routes": [
+        "A4"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0365",
+      "lat": 42.686749,
+      "lon": 23.317505,
+      "routes": [
+        "TM30"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1549",
+      "lat": 42.79097,
+      "lon": 23.304531,
+      "routes": [
+        "A48"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0749",
+      "lat": 42.658351,
+      "lon": 23.328063,
+      "routes": [
+        "A28",
+        "A82",
+        "A9"
+      ],
+      "num_observations": 3
+    },
+    {
+      "stop_id": "A0388",
+      "lat": 42.667458,
+      "lon": 23.264837,
+      "routes": [
+        "A108"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2705",
+      "lat": 42.67395,
+      "lon": 23.269411,
+      "routes": [
+        "A65"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0914",
+      "lat": 42.644508,
+      "lon": 23.313971,
+      "routes": [
+        "A6"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2311",
+      "lat": 42.710041,
+      "lon": 23.335703,
+      "routes": [
+        "TM51"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB6276",
+      "lat": 42.665691,
+      "lon": 23.286869,
+      "routes": [
+        "TB39"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1288",
+      "lat": 42.682285,
+      "lon": 23.34943,
+      "routes": [
+        "A58"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0576",
+      "lat": 42.665176,
+      "lon": 23.372637,
+      "routes": [
+        "TB39"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0612",
+      "lat": 42.641653,
+      "lon": 23.414176,
+      "routes": [
+        "A217",
+        "A84"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A0350",
+      "lat": 42.669193,
+      "lon": 23.254732,
+      "routes": [
+        "A3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1824",
+      "lat": 42.680302,
+      "lon": 23.357512,
+      "routes": [
+        "TM22"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0955",
+      "lat": 42.803516,
+      "lon": 23.344574,
+      "routes": [
+        "A104"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2724",
+      "lat": 42.672054,
+      "lon": 23.38179,
+      "routes": [
+        "A100"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0099",
+      "lat": 42.784836,
+      "lon": 23.396128,
+      "routes": [
+        "A45"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0651",
+      "lat": 42.716625,
+      "lon": 23.237305,
+      "routes": [
+        "A54"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1307",
+      "lat": 42.695351,
+      "lon": 23.320999,
+      "routes": [
+        "TM55"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0744",
+      "lat": 42.738918,
+      "lon": 23.316774,
+      "routes": [
+        "A104"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1061",
+      "lat": 42.728455,
+      "lon": 23.261687,
+      "routes": [
+        "A13",
+        "A98"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "TM0348",
+      "lat": 42.667027,
+      "lon": 23.26445,
+      "routes": [
+        "TM51"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A6642",
+      "lat": 42.659458,
+      "lon": 23.462696,
+      "routes": [
+        "A76"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1029",
+      "lat": 42.62571,
+      "lon": 23.192842,
+      "routes": [
+        "A105"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1698",
+      "lat": 42.696743,
+      "lon": 23.33791,
+      "routes": [
+        "TB9"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2095",
+      "lat": 42.765533,
+      "lon": 23.41283,
+      "routes": [
+        "A40"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2595",
+      "lat": 42.677025,
+      "lon": 23.369013,
+      "routes": [
+        "TM22"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2330",
+      "lat": 42.677582,
+      "lon": 23.330893,
+      "routes": [
+        "A57"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0298",
+      "lat": 42.698708,
+      "lon": 23.334419,
+      "routes": [
+        "TM22"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0453",
+      "lat": 42.717205,
+      "lon": 23.170464,
+      "routes": [
+        "A193"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1603",
+      "lat": 42.64048,
+      "lon": 23.386797,
+      "routes": [
+        "A69"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1764",
+      "lat": 42.731173,
+      "lon": 23.315157,
+      "routes": [
+        "A55",
+        "A9"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "TB2833",
+      "lat": 42.621651,
+      "lon": 23.420425,
+      "routes": [
+        "TB33"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0160",
+      "lat": 42.652748,
+      "lon": 23.403913,
+      "routes": [
+        "A84"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0911",
+      "lat": 42.66021,
+      "lon": 23.316961,
+      "routes": [
+        "TM24"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1948",
+      "lat": 42.708679,
+      "lon": 23.288137,
+      "routes": [
+        "TM28"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1033",
+      "lat": 42.663158,
+      "lon": 23.356659,
+      "routes": [
+        "A78"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1881",
+      "lat": 42.711205,
+      "lon": 23.309465,
+      "routes": [
+        "TB3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2530",
+      "lat": 42.783321,
+      "lon": 23.517691,
+      "routes": [
+        "A34"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0073",
+      "lat": 42.677769,
+      "lon": 23.355867,
+      "routes": [
+        "TB3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0928",
+      "lat": 42.676735,
+      "lon": 23.304808,
+      "routes": [
+        "TM32"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2727",
+      "lat": 42.659424,
+      "lon": 23.463848,
+      "routes": [
+        "A74"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1194",
+      "lat": 42.671543,
+      "lon": 23.364098,
+      "routes": [
+        "A99"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1231",
+      "lat": 42.732578,
+      "lon": 23.29677,
+      "routes": [
+        "A56"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2113",
+      "lat": 42.695347,
+      "lon": 23.315273,
+      "routes": [
+        "TM32"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A6333",
+      "lat": 42.711128,
+      "lon": 23.368864,
+      "routes": [
+        "A32"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0031",
+      "lat": 42.672939,
+      "lon": 23.285339,
+      "routes": [
+        "A84"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0275",
+      "lat": 42.679333,
+      "lon": 23.301748,
+      "routes": [
+        "A6"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1319",
+      "lat": 42.704491,
+      "lon": 23.330957,
+      "routes": [
+        "TB6"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2003",
+      "lat": 42.710663,
+      "lon": 23.321383,
+      "routes": [
+        "TM55"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2755",
+      "lat": 42.660351,
+      "lon": 23.318291,
+      "routes": [
+        "TB39"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1847",
+      "lat": 42.690197,
+      "lon": 23.370197,
+      "routes": [
+        "A4"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2870",
+      "lat": 42.589306,
+      "lon": 23.293076,
+      "routes": [
+        "A63"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2730",
+      "lat": 42.666862,
+      "lon": 23.283611,
+      "routes": [
+        "TB39"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0912",
+      "lat": 42.658918,
+      "lon": 23.315641,
+      "routes": [
+        "TB39",
+        "TB43"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "TB2170",
+      "lat": 42.701748,
+      "lon": 23.310747,
+      "routes": [
+        "TB36"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0802",
+      "lat": 42.664425,
+      "lon": 23.42375,
+      "routes": [
+        "A75"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0342",
+      "lat": 42.660622,
+      "lon": 23.317078,
+      "routes": [
+        "TM40"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A6276",
+      "lat": 42.6656,
+      "lon": 23.287102,
+      "routes": [
+        "A84"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0793",
+      "lat": 42.709221,
+      "lon": 23.42679,
+      "routes": [
+        "A76"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1584",
+      "lat": 42.727083,
+      "lon": 23.344479,
+      "routes": [
+        "A42",
+        "A46"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A0564",
+      "lat": 42.682899,
+      "lon": 23.278526,
+      "routes": [
+        "A9"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0195",
+      "lat": 42.718491,
+      "lon": 23.290888,
+      "routes": [
+        "A54"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1776",
+      "lat": 42.721001,
+      "lon": 23.311893,
+      "routes": [
+        "TM32",
+        "TM33"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "TB1245",
+      "lat": 42.65876,
+      "lon": 23.278786,
+      "routes": [
+        "TB41",
+        "TB9"
+      ],
+      "num_observations": 2
+    },
+    {
+      "stop_id": "A0641",
+      "lat": 42.678486,
+      "lon": 23.285374,
+      "routes": [
+        "A12"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2453",
+      "lat": 42.686245,
+      "lon": 23.412205,
+      "routes": [
+        "A99"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0867",
+      "lat": 42.655937,
+      "lon": 23.28727,
+      "routes": [
+        "TB41"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1257",
+      "lat": 42.66943,
+      "lon": 23.366751,
+      "routes": [
+        "TB32"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2114",
+      "lat": 42.699421,
+      "lon": 23.310081,
+      "routes": [
+        "TB7"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0414",
+      "lat": 42.624317,
+      "lon": 23.356525,
+      "routes": [
+        "TB24"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2593",
+      "lat": 42.659622,
+      "lon": 23.381395,
+      "routes": [
+        "A99"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0764",
+      "lat": 42.663601,
+      "lon": 23.357958,
+      "routes": [
+        "A58"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0382",
+      "lat": 42.70583,
+      "lon": 23.317627,
+      "routes": [
+        "A8"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0834",
+      "lat": 42.633778,
+      "lon": 23.31064,
+      "routes": [
+        "A63"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0272",
+      "lat": 42.67897,
+      "lon": 23.300476,
+      "routes": [
+        "TM55"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2295",
+      "lat": 42.642628,
+      "lon": 23.285273,
+      "routes": [
+        "A6"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1679",
+      "lat": 42.78474,
+      "lon": 23.396015,
+      "routes": [
+        "A43"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1280",
+      "lat": 42.696224,
+      "lon": 23.315296,
+      "routes": [
+        "TM51"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2102",
+      "lat": 42.705036,
+      "lon": 23.311579,
+      "routes": [
+        "TB10"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2767",
+      "lat": 42.669506,
+      "lon": 23.279934,
+      "routes": [
+        "TB8"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1432",
+      "lat": 42.705112,
+      "lon": 23.127644,
+      "routes": [
+        "A174"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0325",
+      "lat": 42.70631,
+      "lon": 23.303007,
+      "routes": [
+        "A59"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1699",
+      "lat": 42.691067,
+      "lon": 23.336933,
+      "routes": [
+        "TB32"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1454",
+      "lat": 42.672703,
+      "lon": 23.387857,
+      "routes": [
+        "TM20"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2397",
+      "lat": 42.722683,
+      "lon": 23.261856,
+      "routes": [
+        "A121"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2791",
+      "lat": 42.625061,
+      "lon": 23.354549,
+      "routes": [
+        "TB24"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1489",
+      "lat": 42.685719,
+      "lon": 23.350777,
+      "routes": [
+        "A2"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2456",
+      "lat": 42.736191,
+      "lon": 23.317598,
+      "routes": [
+        "A104"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1849",
+      "lat": 42.668911,
+      "lon": 23.243622,
+      "routes": [
+        "A29"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0845",
+      "lat": 42.717167,
+      "lon": 23.170639,
+      "routes": [
+        "A31"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2109",
+      "lat": 42.680256,
+      "lon": 23.287785,
+      "routes": [
+        "TM25"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0060",
+      "lat": 42.742462,
+      "lon": 23.280649,
+      "routes": [
+        "TM32"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1154",
+      "lat": 42.676445,
+      "lon": 23.370331,
+      "routes": [
+        "TM50"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1725",
+      "lat": 42.69696,
+      "lon": 23.352642,
+      "routes": [
+        "A100"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0599",
+      "lat": 42.660583,
+      "lon": 23.297039,
+      "routes": [
+        "TB4"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0023",
+      "lat": 42.654415,
+      "lon": 23.371616,
+      "routes": [
+        "TB39"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0407",
+      "lat": 42.571072,
+      "lon": 23.359314,
+      "routes": [
+        "A78"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1394",
+      "lat": 42.689377,
+      "lon": 23.338907,
+      "routes": [
+        "TB3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1260",
+      "lat": 42.665974,
+      "lon": 23.372868,
+      "routes": [
+        "TB33"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A6429",
+      "lat": 42.617599,
+      "lon": 23.367342,
+      "routes": [
+        "A200"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0291",
+      "lat": 42.67487,
+      "lon": 23.290329,
+      "routes": [
+        "A9"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0895",
+      "lat": 42.727329,
+      "lon": 23.217289,
+      "routes": [
+        "A259"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1202",
+      "lat": 42.625206,
+      "lon": 23.447355,
+      "routes": [
+        "A70"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1905",
+      "lat": 42.684578,
+      "lon": 23.36442,
+      "routes": [
+        "A1"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0859",
+      "lat": 42.796432,
+      "lon": 23.339705,
+      "routes": [
+        "A104"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0586",
+      "lat": 42.66169,
+      "lon": 23.273573,
+      "routes": [
+        "A25"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0535",
+      "lat": 42.608078,
+      "lon": 23.400175,
+      "routes": [
+        "A69"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2052",
+      "lat": 42.730412,
+      "lon": 23.283108,
+      "routes": [
+        "A26"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0696",
+      "lat": 42.770622,
+      "lon": 23.438889,
+      "routes": [
+        "A40"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0646",
+      "lat": 42.710114,
+      "lon": 23.387861,
+      "routes": [
+        "A37"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0780",
+      "lat": 42.720905,
+      "lon": 23.536621,
+      "routes": [
+        "A110"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2093",
+      "lat": 42.717915,
+      "lon": 23.279104,
+      "routes": [
+        "A9"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0218",
+      "lat": 42.651985,
+      "lon": 23.379515,
+      "routes": [
+        "A85"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0541",
+      "lat": 42.719673,
+      "lon": 23.310932,
+      "routes": [
+        "TM29"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1492",
+      "lat": 42.687229,
+      "lon": 23.351788,
+      "routes": [
+        "A37"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB6038",
+      "lat": 42.684231,
+      "lon": 23.272991,
+      "routes": [
+        "TB35"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1684",
+      "lat": 42.764751,
+      "lon": 23.314528,
+      "routes": [
+        "A48"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1892",
+      "lat": 42.716621,
+      "lon": 23.275597,
+      "routes": [
+        "TB6"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0554",
+      "lat": 42.657047,
+      "lon": 23.384413,
+      "routes": [
+        "A91"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0034",
+      "lat": 42.663704,
+      "lon": 23.412527,
+      "routes": [
+        "A82"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0334",
+      "lat": 42.735199,
+      "lon": 23.292692,
+      "routes": [
+        "TM32"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2417",
+      "lat": 42.654999,
+      "lon": 23.399956,
+      "routes": [
+        "TB1"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0371",
+      "lat": 42.674042,
+      "lon": 23.382082,
+      "routes": [
+        "TB2"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1692",
+      "lat": 42.655991,
+      "lon": 23.349483,
+      "routes": [
+        "A90"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0575",
+      "lat": 42.6721,
+      "lon": 23.32156,
+      "routes": [
+        "TM24"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1638",
+      "lat": 42.575859,
+      "lon": 23.359304,
+      "routes": [
+        "A78"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2602",
+      "lat": 42.765049,
+      "lon": 23.196886,
+      "routes": [
+        "A98"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1798",
+      "lat": 42.716469,
+      "lon": 23.250336,
+      "routes": [
+        "TB7"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1291",
+      "lat": 42.698864,
+      "lon": 23.361803,
+      "routes": [
+        "A53"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0268",
+      "lat": 42.679848,
+      "lon": 23.302263,
+      "routes": [
+        "A91"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0639",
+      "lat": 42.681416,
+      "lon": 23.289873,
+      "routes": [
+        "TM25"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A6220",
+      "lat": 42.708576,
+      "lon": 23.318302,
+      "routes": [
+        "A43"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1792",
+      "lat": 42.742962,
+      "lon": 23.274498,
+      "routes": [
+        "A27"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0296",
+      "lat": 42.695915,
+      "lon": 23.284502,
+      "routes": [
+        "A8"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1459",
+      "lat": 42.632893,
+      "lon": 23.333555,
+      "routes": [
+        "A3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0349",
+      "lat": 42.663685,
+      "lon": 23.256247,
+      "routes": [
+        "TM25"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB2128",
+      "lat": 42.710411,
+      "lon": 23.37974,
+      "routes": [
+        "TB10"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0919",
+      "lat": 42.650238,
+      "lon": 23.315533,
+      "routes": [
+        "A28"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1994",
+      "lat": 42.705013,
+      "lon": 23.317474,
+      "routes": [
+        "TM28"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1170",
+      "lat": 42.694157,
+      "lon": 23.230303,
+      "routes": [
+        "A3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A6240",
+      "lat": 42.742195,
+      "lon": 23.27895,
+      "routes": [
+        "A109"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0346",
+      "lat": 42.670345,
+      "lon": 23.253473,
+      "routes": [
+        "TB35"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A6599",
+      "lat": 42.71323,
+      "lon": 23.380697,
+      "routes": [
+        "A52"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1609",
+      "lat": 42.645412,
+      "lon": 23.345253,
+      "routes": [
+        "A58"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2411",
+      "lat": 42.629314,
+      "lon": 23.195999,
+      "routes": [
+        "A105"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2420",
+      "lat": 42.711472,
+      "lon": 23.30064,
+      "routes": [
+        "TM29"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1312",
+      "lat": 42.704502,
+      "lon": 23.330465,
+      "routes": [
+        "A59"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2001",
+      "lat": 42.71104,
+      "lon": 23.320282,
+      "routes": [
+        "TM51"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0366",
+      "lat": 42.689468,
+      "lon": 23.313955,
+      "routes": [
+        "TB4"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2625",
+      "lat": 42.624027,
+      "lon": 23.375048,
+      "routes": [
+        "A3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0653",
+      "lat": 42.720642,
+      "lon": 23.242603,
+      "routes": [
+        "A3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2258",
+      "lat": 42.694038,
+      "lon": 23.347561,
+      "routes": [
+        "A1"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1768",
+      "lat": 42.723175,
+      "lon": 23.543392,
+      "routes": [
+        "A35"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1574",
+      "lat": 42.666672,
+      "lon": 23.338024,
+      "routes": [
+        "A12"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2487",
+      "lat": 42.637825,
+      "lon": 23.375036,
+      "routes": [
+        "A90"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1215",
+      "lat": 42.771542,
+      "lon": 23.255013,
+      "routes": [
+        "A103"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0284",
+      "lat": 42.693348,
+      "lon": 23.309896,
+      "routes": [
+        "TB3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1965",
+      "lat": 42.698833,
+      "lon": 23.335072,
+      "routes": [
+        "A52"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0050",
+      "lat": 42.707291,
+      "lon": 23.148462,
+      "routes": [
+        "A193"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2040",
+      "lat": 42.705711,
+      "lon": 23.348366,
+      "routes": [
+        "A201"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2337",
+      "lat": 42.703922,
+      "lon": 23.323532,
+      "routes": [
+        "TM34"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2782",
+      "lat": 42.656765,
+      "lon": 23.3274,
+      "routes": [
+        "A37"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2754",
+      "lat": 42.637669,
+      "lon": 23.370451,
+      "routes": [
+        "A3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB1328",
+      "lat": 42.711433,
+      "lon": 23.318691,
+      "routes": [
+        "TB36"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0324",
+      "lat": 42.7132,
+      "lon": 23.315765,
+      "routes": [
+        "TB35"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0246",
+      "lat": 42.64938,
+      "lon": 23.377739,
+      "routes": [
+        "A3"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2812",
+      "lat": 42.731361,
+      "lon": 23.297312,
+      "routes": [
+        "A56"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0672",
+      "lat": 42.6716,
+      "lon": 23.293964,
+      "routes": [
+        "TM55"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM1299",
+      "lat": 42.689903,
+      "lon": 23.306227,
+      "routes": [
+        "TM25"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A0542",
+      "lat": 42.726974,
+      "lon": 23.313572,
+      "routes": [
+        "A90"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TB0309",
+      "lat": 42.667484,
+      "lon": 23.303284,
+      "routes": [
+        "TB7"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A1433",
+      "lat": 42.709404,
+      "lon": 23.133743,
+      "routes": [
+        "A174"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "A2195",
+      "lat": 42.686573,
+      "lon": 23.351664,
+      "routes": [
+        "A37"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM0374",
+      "lat": 42.719509,
+      "lon": 23.309565,
+      "routes": [
+        "TM55"
+      ],
+      "num_observations": 1
+    },
+    {
+      "stop_id": "TM2211",
+      "lat": 42.66095,
+      "lon": 23.285624,
+      "routes": [
+        "TM30"
+      ],
+      "num_observations": 1
+    }
+  ]
+}
